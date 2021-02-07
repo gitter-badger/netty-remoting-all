@@ -9,10 +9,11 @@
 ## 使用
 
 ```xml
+
 <dependency>
-  <groupId>link.thingscloud</groupId>
-  <artifactId>netty-remoting-all</artifactId>
-  <version>0.1.0</version>
+    <groupId>link.thingscloud</groupId>
+    <artifactId>netty-remoting-all</artifactId>
+    <version>0.1.0</version>
 </dependency>
 ```
 
@@ -21,19 +22,18 @@
 ### 1.netty-remoting
 
 ```java
-RemotingServer remotingServer = RemotingBootstrapFactory.createRemotingServer(new RemotingServerConfig());
-remotingServer.start();
+RemotingServer remotingServer=RemotingBootstrapFactory.createRemotingServer(new RemotingServerConfig());
+        remotingServer.start();
 ```
 
 ```java
-RemotingClient remotingClient = RemotingBootstrapFactory.createRemotingClient(new RemotingClientConfig());
-RemotingCommand request = remotingClient.commandFactory().createRequest();
-remotingClient.invoke("127.0.0.1:8888", request, 1000);
-remotingClient.start();
+RemotingClient remotingClient=RemotingBootstrapFactory.createRemotingClient(new RemotingClientConfig());
+        RemotingCommand request=remotingClient.commandFactory().createRequest();
+        remotingClient.invoke("127.0.0.1:8888",request,1000);
+        remotingClient.start();
 ```
 
 ### 2.netty-remoting-spring-boot-starter
-
 
 ## License
 
