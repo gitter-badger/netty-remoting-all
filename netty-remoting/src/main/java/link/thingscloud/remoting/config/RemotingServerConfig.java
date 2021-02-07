@@ -17,6 +17,10 @@
 
 package link.thingscloud.remoting.config;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class RemotingServerConfig extends RemotingConfig {
     private int serverListenPort = 8888;
     /**

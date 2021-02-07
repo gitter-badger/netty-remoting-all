@@ -23,6 +23,10 @@ import org.slf4j.LoggerFactory;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public final class ThreadUtils {
     private static final Logger LOG = LoggerFactory.getLogger(ThreadUtils.class);
 
@@ -45,7 +49,7 @@ public final class ThreadUtils {
 
     public static ThreadFactory newGenericThreadFactory(final String processName, final boolean isDaemon) {
         return new ThreadFactory() {
-            private AtomicInteger threadIndex = new AtomicInteger(0);
+            private final AtomicInteger threadIndex = new AtomicInteger(0);
 
             @Override
             public Thread newThread(Runnable r) {
@@ -91,7 +95,7 @@ public final class ThreadUtils {
     public static ThreadFactory newGenericThreadFactory(final String processName, final int threads,
                                                         final boolean isDaemon) {
         return new ThreadFactory() {
-            private AtomicInteger threadIndex = new AtomicInteger(0);
+            private final AtomicInteger threadIndex = new AtomicInteger(0);
 
             @Override
             public Thread newThread(Runnable r) {

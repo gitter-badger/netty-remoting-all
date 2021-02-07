@@ -20,7 +20,9 @@ package link.thingscloud.remoting.config;
 /**
  * TCP socket configuration
  *
+ * @author zhouhailin
  * @see java.net.SocketOptions
+ * @since 0.1.0
  */
 public class TcpSocketConfig {
     private boolean tcpSoReuseAddress = true;

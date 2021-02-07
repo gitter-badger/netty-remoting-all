@@ -22,6 +22,10 @@ import link.thingscloud.remoting.api.command.RemotingCommand;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class RequestContext {
     protected RemotingEndPoint remotingEndPoint;
     protected String remoteAddr;

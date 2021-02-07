@@ -25,6 +25,10 @@ import java.lang.reflect.Modifier;
 import java.lang.reflect.Type;
 import java.util.*;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public final class BeanUtils {
     private final static Logger LOG = LoggerFactory.getLogger(BeanUtils.class);
 

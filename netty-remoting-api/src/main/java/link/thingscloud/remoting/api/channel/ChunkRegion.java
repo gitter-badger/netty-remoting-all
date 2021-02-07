@@ -20,6 +20,10 @@ package link.thingscloud.remoting.api.channel;
 import java.io.IOException;
 import java.nio.channels.WritableByteChannel;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public interface ChunkRegion {
     void release();
 

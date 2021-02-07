@@ -23,8 +23,13 @@ import link.thingscloud.remoting.api.command.TrafficType;
 import link.thingscloud.remoting.api.exception.RemotingCodecException;
 
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.Map.Entry;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class CodecHelper {
     // ProtocolMagic(1) + TotalLength(4) + CmdCode(2) + CmdVersion(2) + RequestID(4) + TrafficType(1) + OpCode(2)
     // + RemarkLen(2) + PropertiesSize(2) + PayloadLen(4);
@@ -35,7 +40,7 @@ public class CodecHelper {
     final static int PAYLOAD_MAX_LEN = 16777216; // 16MB
     public final static int PACKET_MAX_LEN = MIN_PROTOCOL_LEN + REMARK_MAX_LEN + PROPERTY_MAX_LEN + PAYLOAD_MAX_LEN;
     private final static char PROPERTY_SEPARATOR = '\n';
-    private final static Charset REMOTING_CHARSET = Charset.forName("UTF-8");
+    private final static Charset REMOTING_CHARSET = StandardCharsets.UTF_8;
 
     public static void encodeCommand(final RemotingCommand command, final RemotingBuffer out) {
         out.writeByte(PROTOCOL_MAGIC);

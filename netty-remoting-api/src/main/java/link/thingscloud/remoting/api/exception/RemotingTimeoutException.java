@@ -21,7 +21,8 @@ package link.thingscloud.remoting.api.exception;
  * of the target method did not complete before a configurable
  * timeout, for example when a reply message was not received.
  *
- * @since 1.0.0
+ * @author zhouhailin
+ * @since 0.1.0
  */
 public class RemotingTimeoutException extends RemotingAccessException {
     private static final long serialVersionUID = 8710772392914461626L;

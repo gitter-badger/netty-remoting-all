@@ -17,6 +17,10 @@
 
 package link.thingscloud.remoting.api.command;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public interface RemotingCommandFactory {
     RemotingCommand createRequest();
 

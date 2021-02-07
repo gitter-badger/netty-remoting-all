@@ -21,6 +21,9 @@ package link.thingscloud.remoting.internal;
  * Copy from Bouncy Castle Crypto APIs
  * <p>
  * This class is a utility class for manipulating byte arrays.
+ *
+ * @author zhouhailin
+ * @since 0.1.0
  */
 public final class ByteUtils {
 
@@ -226,7 +229,7 @@ public final class ByteUtils {
      */
     public static String toHexString(byte[] input, String prefix,
                                      String seperator) {
-        String result = new String(prefix);
+        String result = prefix;
         for (int i = 0; i < input.length; i++) {
             result += HEX_CHARS[(input[i] >>> 4) & 0x0f];
             result += HEX_CHARS[(input[i]) & 0x0f];

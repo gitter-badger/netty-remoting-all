@@ -22,6 +22,10 @@ import link.thingscloud.remoting.api.command.RemotingCommand;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public interface RemotingChannel {
     /**
      * Returns the local address where this {@code RemotingChannel} is bound to.  The returned

@@ -20,8 +20,12 @@ package link.thingscloud.remoting.internal;
 import java.nio.ByteBuffer;
 import java.util.Calendar;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class UIDGenerator {
-    private static ThreadLocal<UIDGenerator> generatorLocal = new ThreadLocal<UIDGenerator>() {
+    private static final ThreadLocal<UIDGenerator> generatorLocal = new ThreadLocal<UIDGenerator>() {
         @Override
         protected UIDGenerator initialValue() {
             return new UIDGenerator();
@@ -32,7 +36,7 @@ public class UIDGenerator {
     private long startTime;
     private long nextStartTime;
     private StringBuilder sb = null;
-    private ByteBuffer buffer = ByteBuffer.allocate(6);
+    private final ByteBuffer buffer = ByteBuffer.allocate(6);
 
     private UIDGenerator() {
         int len = 4 + 2 + 4 + 4 + 2;

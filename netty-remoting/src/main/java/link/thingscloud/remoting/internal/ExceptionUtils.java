@@ -23,6 +23,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class ExceptionUtils {
 
     private static final String LINE_SEPARATOR = System.getProperty("line.separator");

@@ -21,6 +21,10 @@ import io.netty.channel.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 @ChannelHandler.Sharable
 public class ExceptionHandler extends ChannelDuplexHandler {
     private final static Logger LOG = LoggerFactory.getLogger(ExceptionHandler.class);

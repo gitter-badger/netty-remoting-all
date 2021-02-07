@@ -54,6 +54,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.*;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public abstract class NettyRemotingAbstract implements RemotingService {
     /**
      * Remoting logger instance.
@@ -109,12 +113,12 @@ public abstract class NettyRemotingAbstract implements RemotingService {
     /**
      * Provides custom interceptor at the occurrence of beforeRequest and afterResponseReceived event.
      */
-    private InterceptorGroup interceptorGroup = new InterceptorGroup();
+    private final InterceptorGroup interceptorGroup = new InterceptorGroup();
 
     /**
      * Provides listener mechanism to handle netty channel events.
      */
-    private ChannelEventListenerGroup channelEventListenerGroup = new ChannelEventListenerGroup();
+    private final ChannelEventListenerGroup channelEventListenerGroup = new ChannelEventListenerGroup();
 
     NettyRemotingAbstract(RemotingConfig remotingConfig) {
         this.semaphoreOneway = new Semaphore(remotingConfig.getOnewayInvokeSemaphore(), true);
@@ -544,7 +548,7 @@ public abstract class NettyRemotingAbstract implements RemotingService {
     class ChannelEventExecutor extends Thread {
         private final static int MAX_SIZE = 10000;
         private final LinkedBlockingQueue<NettyChannelEvent> eventQueue = new LinkedBlockingQueue<NettyChannelEvent>();
-        private String name;
+        private final String name;
 
         public ChannelEventExecutor(String nettyEventExector) {
             super(nettyEventExector);

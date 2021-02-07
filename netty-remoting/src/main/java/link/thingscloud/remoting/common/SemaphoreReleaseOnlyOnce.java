@@ -20,6 +20,10 @@ package link.thingscloud.remoting.common;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class SemaphoreReleaseOnlyOnce {
     private final AtomicBoolean released = new AtomicBoolean(false);
     private final Semaphore semaphore;

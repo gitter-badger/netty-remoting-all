@@ -17,6 +17,10 @@
 
 package link.thingscloud.remoting.config;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class RemotingClientConfig extends RemotingConfig {
     private int connectTimeoutMillis = 3000;
 

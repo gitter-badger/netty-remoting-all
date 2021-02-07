@@ -17,6 +17,10 @@
 
 package link.thingscloud.remoting.api;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public enum RemotingEndPoint {
     REQUEST,
     RESPONSE

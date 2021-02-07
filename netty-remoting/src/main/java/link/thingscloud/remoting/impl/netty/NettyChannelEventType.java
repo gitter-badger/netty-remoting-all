@@ -17,6 +17,10 @@
 
 package link.thingscloud.remoting.impl.netty;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public enum NettyChannelEventType {
     CONNECT,
     CLOSE,

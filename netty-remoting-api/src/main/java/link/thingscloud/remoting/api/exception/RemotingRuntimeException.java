@@ -25,7 +25,8 @@ package link.thingscloud.remoting.api.exception;
  * this exception, if any; {@code printStackTrace} and other like methods will
  * delegate to the wrapped exception, if any.
  *
- * @since 1.0.0
+ * @author zhouhailin
+ * @since 0.1.0
  */
 public abstract class RemotingRuntimeException extends RuntimeException {
     private static final long serialVersionUID = -8371779880133933367L;

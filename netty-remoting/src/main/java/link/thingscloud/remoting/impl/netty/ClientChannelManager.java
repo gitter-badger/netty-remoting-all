@@ -34,6 +34,10 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class ClientChannelManager {
     protected static final Logger LOG = LoggerFactory.getLogger(ClientChannelManager.class);
 

@@ -32,6 +32,10 @@ import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class Decoder extends ByteToMessageDecoder {
     private static final Logger LOG = LoggerFactory.getLogger(Decoder.class);
 

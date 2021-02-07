@@ -21,6 +21,10 @@ import link.thingscloud.remoting.api.command.RemotingCommand;
 import link.thingscloud.remoting.api.command.RemotingCommandFactory;
 import link.thingscloud.remoting.api.command.TrafficType;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class RemotingCommandFactoryImpl implements RemotingCommandFactory {
     public RemotingCommandFactoryImpl() {
     }

@@ -19,6 +19,10 @@ package link.thingscloud.remoting.api.command;
 
 import java.util.Map;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public interface RemotingCommand {
     short cmdCode();
 

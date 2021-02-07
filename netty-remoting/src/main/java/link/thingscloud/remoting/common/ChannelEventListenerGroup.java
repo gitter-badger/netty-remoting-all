@@ -23,6 +23,10 @@ import link.thingscloud.remoting.api.channel.RemotingChannel;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class ChannelEventListenerGroup {
     private final List<ChannelEventListener> listenerList = new ArrayList<ChannelEventListener>();
 

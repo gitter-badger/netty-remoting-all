@@ -17,6 +17,10 @@
 
 package link.thingscloud.remoting.api.exception;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class SemaphoreExhaustedException extends RemotingRuntimeException {
     private static final long serialVersionUID = 6280428909532427263L;
 

@@ -44,6 +44,10 @@ import link.thingscloud.remoting.internal.JvmUtils;
 import java.net.SocketAddress;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class NettyRemotingClient extends NettyRemotingAbstract implements RemotingClient {
     private final Bootstrap clientBootstrap = new Bootstrap();
     private final EventLoopGroup ioGroup;
@@ -51,7 +55,7 @@ public class NettyRemotingClient extends NettyRemotingAbstract implements Remoti
 
     private final RemotingClientConfig clientConfig;
 
-    private EventExecutorGroup workerGroup;
+    private final EventExecutorGroup workerGroup;
     private ClientChannelManager clientChannelManager;
 
     public NettyRemotingClient(final RemotingClientConfig clientConfig) {

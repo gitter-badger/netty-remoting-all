@@ -31,6 +31,10 @@ import link.thingscloud.remoting.internal.RemotingUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class Encoder extends MessageToByteEncoder<RemotingCommand> {
     private static final Logger LOG = LoggerFactory.getLogger(Encoder.class);
 

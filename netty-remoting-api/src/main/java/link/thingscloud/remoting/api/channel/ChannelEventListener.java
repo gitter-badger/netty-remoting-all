@@ -17,6 +17,10 @@
 
 package link.thingscloud.remoting.api.channel;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public interface ChannelEventListener {
     void onChannelConnect(RemotingChannel channel);
 

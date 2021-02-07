@@ -24,6 +24,10 @@ import link.thingscloud.remoting.api.command.RemotingCommand;
 
 import java.net.SocketAddress;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class NettyChannelImpl implements RemotingChannel {
     private final io.netty.channel.Channel channel;
 

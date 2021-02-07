@@ -22,6 +22,10 @@ import link.thingscloud.remoting.api.buffer.RemotingBuffer;
 
 import java.nio.ByteBuffer;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class NettyRemotingBuffer implements RemotingBuffer {
     private final ByteBuf buffer;
 

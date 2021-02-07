@@ -19,7 +19,13 @@ package link.thingscloud.remoting.api;
 
 import link.thingscloud.remoting.api.command.RemotingCommand;
 
+
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public interface RemotingClient extends RemotingService {
+
     RemotingCommand invoke(String address, RemotingCommand request, long timeoutMillis);
 
     void invokeAsync(String address, RemotingCommand request, AsyncHandler asyncHandler, long timeoutMillis);

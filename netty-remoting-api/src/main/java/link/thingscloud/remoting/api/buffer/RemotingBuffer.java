@@ -19,6 +19,11 @@ package link.thingscloud.remoting.api.buffer;
 
 import java.nio.ByteBuffer;
 
+
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public interface RemotingBuffer {
     void writeByte(byte data);
 

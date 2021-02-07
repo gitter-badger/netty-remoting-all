@@ -23,7 +23,8 @@ import link.thingscloud.remoting.api.command.RemotingCommand;
  * The AsyncHandler interface is implemented when wishing to receive callback notification of the completion of
  * service invoked asynchronously.
  *
- * @since 1.0.0
+ * @author zhouhailin
+ * @since 0.1.0
  */
 public interface AsyncHandler {
     void onFailure(RemotingCommand request, Throwable cause);

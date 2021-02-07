@@ -20,6 +20,10 @@ package link.thingscloud.remoting.internal;
 import java.net.*;
 import java.util.Enumeration;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public final class NetworkUtils {
 
     public static final String DEFAULT_LOCAL_ADDRESS = "127.0.0.1";

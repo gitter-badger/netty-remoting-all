@@ -20,6 +20,10 @@ package link.thingscloud.remoting.api;
 import link.thingscloud.remoting.api.channel.RemotingChannel;
 import link.thingscloud.remoting.api.command.RemotingCommand;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public interface RequestProcessor {
     RemotingCommand processRequest(RemotingChannel channel, RemotingCommand request);
 }

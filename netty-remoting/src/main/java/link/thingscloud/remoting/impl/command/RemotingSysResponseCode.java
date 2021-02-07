@@ -17,6 +17,10 @@
 
 package link.thingscloud.remoting.impl.command;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class RemotingSysResponseCode {
 
     public static final short SUCCESS = 0;

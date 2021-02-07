@@ -28,7 +28,8 @@ package link.thingscloud.remoting.api.exception;
  * In this case, the client opCode doesn't show any signs of being involved in
  * remote access, as there aren't any remoting-specific dependencies.
  *
- * @since 1.0.0
+ * @author zhouhailin
+ * @since 0.1.0
  */
 public class RemotingAccessException extends RemotingRuntimeException {
     private static final long serialVersionUID = 6280428909532427263L;

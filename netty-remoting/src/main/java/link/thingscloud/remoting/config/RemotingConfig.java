@@ -17,6 +17,10 @@
 
 package link.thingscloud.remoting.config;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public abstract class RemotingConfig extends TcpSocketConfig {
     /**
      * IdleStateEvent will be triggered when neither read nor write was

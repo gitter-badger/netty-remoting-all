@@ -25,6 +25,10 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class RemotingCommandImpl implements RemotingCommand {
     @EqualsExclude
     public final static RequestIdGenerator REQUEST_ID_GENERATOR = RequestIdGenerator.inst;
@@ -37,7 +41,7 @@ public class RemotingCommandImpl implements RemotingCommand {
     private String remark = "";
 
     @ToStringExclude
-    private Map<String, String> properties = new HashMap<>();
+    private final Map<String, String> properties = new HashMap<>();
 
     @ToStringExclude
     private byte[] payload;

@@ -25,6 +25,10 @@ import java.io.IOException;
 import java.lang.management.ManagementFactory;
 import java.util.Random;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public final class JvmUtils {
     public static final String OS_NAME = System.getProperty("os.name").toLowerCase();
     private final static Logger LOG = LoggerFactory.getLogger(JvmUtils.class);

@@ -21,7 +21,8 @@ package link.thingscloud.remoting.api.exception;
  * RemotingConnectFailureException will be thrown when connection
  * could not be established with a remote service.
  *
- * @since 1.0.0
+ * @author zhouhailin
+ * @since 0.1.0
  */
 public class RemotingConnectFailureException extends RemotingAccessException {
     private static final long serialVersionUID = -5565366231695911316L;

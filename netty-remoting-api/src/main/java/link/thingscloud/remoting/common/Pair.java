@@ -17,6 +17,10 @@
 
 package link.thingscloud.remoting.common;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class Pair<L, R> {
     private L left;
     private R right;

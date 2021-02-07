@@ -23,6 +23,10 @@ import link.thingscloud.remoting.common.Pair;
 
 import java.util.concurrent.ExecutorService;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public interface RemotingService extends ConnectionService, ObjectLifecycle {
     void registerInterceptor(Interceptor interceptor);
 

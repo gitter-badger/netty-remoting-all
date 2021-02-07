@@ -22,6 +22,10 @@ import io.netty.channel.Channel;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class RemotingUtil {
     public static String extractRemoteAddress(Channel channel) {
         SocketAddress socketAddress = channel.remoteAddress();

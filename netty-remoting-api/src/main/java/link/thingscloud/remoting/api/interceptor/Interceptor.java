@@ -17,6 +17,10 @@
 
 package link.thingscloud.remoting.api.interceptor;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public interface Interceptor {
     void beforeRequest(RequestContext context);
 

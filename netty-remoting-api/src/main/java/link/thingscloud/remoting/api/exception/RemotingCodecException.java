@@ -18,7 +18,8 @@
 package link.thingscloud.remoting.api.exception;
 
 /**
- * @since 1.0.0
+ * @author zhouhailin
+ * @since 0.1.0
  */
 public class RemotingCodecException extends RemotingAccessException {
     private static final long serialVersionUID = -7597014042746200543L;

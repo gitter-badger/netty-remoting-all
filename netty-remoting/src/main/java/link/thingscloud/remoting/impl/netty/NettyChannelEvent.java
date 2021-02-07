@@ -21,6 +21,10 @@ import io.netty.channel.Channel;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class NettyChannelEvent {
     private final Channel channel;
     private final NettyChannelEventType type;

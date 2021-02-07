@@ -20,6 +20,10 @@ package link.thingscloud.remoting.api.interceptor;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public class InterceptorGroup {
     private final List<Interceptor> interceptors = new ArrayList<>();
 

@@ -26,6 +26,11 @@ import java.io.InputStream;
 import java.util.Map;
 import java.util.Properties;
 
+
+/**
+ * @author zhouhailin
+ * @since 0.1.0
+ */
 public final class PropertyUtils {
     private static final Logger LOG = LoggerFactory.getLogger(PropertyUtils.class);
 
